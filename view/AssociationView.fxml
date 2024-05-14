@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:controller="controller.AssociationController" prefHeight="420.0" prefWidth="600.0" spacing="20" styleClass="background" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+
+    <!-- Include Stylesheet -->
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+
+    <!-- ImageView with Background Image -->
+    <ImageView fitHeight="266.0" fitWidth="811.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <!-- Update the URL of the image to point to your background image -->
+            <Image url="@NBA_Back.jpg" />
+        </image>
+    </ImageView>
+   
+    <!-- Pane for Buttons -->
+    <Pane prefHeight="200.0" prefWidth="200.0">
+        <children>
+            <!-- Explore the Teams Button -->
+            <Button layoutY="-12.0" mnemonicParsing="false" text="Explore the Teams" onAction="#exploreTeams" />
+            
+            <!-- Arrange a New Session Button -->
+            <Button layoutX="413.0" layoutY="-12.0" mnemonicParsing="false" text="Arrange a New Session" onAction="#newSeason"/>
+            
+            <!-- Exit Button -->
+            <Button layoutX="200.0" layoutY="58.0" mnemonicParsing="false" text="Exit" onAction="#exit"/>
+        </children>
+    </Pane>
+</VBox>

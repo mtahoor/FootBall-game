@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="controller.PlayerUpdateController">
+    <padding>
+        <Insets bottom="10" left="5" right="5" top="10" />
+    </padding>
+    
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="443.0" prefWidth="590.0">
+         <children>
+            <Label layoutX="152.0" layoutY="61.0" prefHeight="29.0" prefWidth="166.0" text="Player Details">
+               <font>
+                  <Font name="Adelle Sans Devanagari Light" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="148.0" layoutY="154.0" text="Player Cred:" />
+            <Label layoutX="151.0" layoutY="191.0" text="Player Age:" />
+            <Label layoutX="156.0" layoutY="227.0" text="Player No:" />
+            <Label layoutX="153.0" layoutY="118.0" text="Player Name:" />
+            <Button fx:id="updateButton" layoutX="7.0" layoutY="285.0" mnemonicParsing="false" text="Update" onAction="#updatePlayer" />
+            <Button fx:id="addButton" layoutX="205.0" layoutY="285.0" mnemonicParsing="false" text="Add" onAction="#addPlayer" />
+            <Button fx:id="close" layoutX="396.0" layoutY="285.0" mnemonicParsing="false" text="close" onAction="#close" />
+            <TextField fx:id="playerNameField" layoutX="277.0" layoutY="118.0" />
+            <TextField fx:id="playerCreditField" layoutX="277.0" layoutY="154.0" prefHeight="29.0" prefWidth="183.0" />
+            <TextField fx:id="playerAgeField" layoutX="277.0" layoutY="191.0" />
+            <TextField fx:id="playerNoField" layoutX="277.0" layoutY="227.0" />
+         </children>
+      </Pane>
+   </children>
+</VBox>
